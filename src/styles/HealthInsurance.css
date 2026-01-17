@@ -1,0 +1,180 @@
+.hi-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #f8fbff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.hi-title {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hi-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.hi-section-title {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Benefits Cards */
+.hi-benefits-section {
+    margin-bottom: 60px;
+}
+
+.hi-benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.hi-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f7;
+    transition: all 0.3s ease;
+}
+
+.hi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #1e90ff;
+}
+
+.hi-card h3 {
+    margin-bottom: 15px;
+    color: #1e90ff;
+    font-size: 1.25rem;
+}
+
+.hi-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styling */
+.hi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hi-form label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.hi-form input,
+.hi-form select,
+.hi-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fafbfc;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    color: #333;
+    /* Ensure text is visible */
+}
+
+/* Fix visibility for select options */
+.hi-form select option {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.hi-form input:focus,
+.hi-form select:focus,
+.hi-form textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    background-color: #fff;
+}
+
+.hi-form textarea {
+    resize: vertical;
+    height: 100px;
+    font-family: inherit;
+}
+
+.hi-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hi-button:hover {
+    background-color: #0b6fc2;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.2);
+}
+
+/* Success Message */
+.hi-success {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hi-success h2 {
+    color: #00c853;
+    margin-bottom: 15px;
+}
+
+.hi-success p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hi-benefits-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+}
