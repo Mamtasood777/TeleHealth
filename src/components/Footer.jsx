@@ -48,10 +48,10 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/diagnostic-reports">Diagnostic Reports</Link>
+              <Link to="/wellness-services">Wellness Services</Link>
             </li>
             <li>
-              <Link to="/online-health-records">Online Health Records</Link>
+              <Link to="/health-insurance">Health Insurance</Link>
             </li>
           </ul>
         </div>
@@ -63,14 +63,11 @@ export default function Footer() {
             <li>
               <Link to="/about-us">About Us</Link>
             </li>
-            
+
             <li>
               <Link to="/how-it-works">How It Works</Link>
             </li>
-           
-            <li>
-              <Link to="/contact-support">Contact Support</Link>
-            </li>
+
           </ul>
         </div>
 

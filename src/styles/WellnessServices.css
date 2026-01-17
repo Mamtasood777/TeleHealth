@@ -1,0 +1,232 @@
+.wellness-container {
+    padding: 40px 20px;
+    background-color: #f8fbff;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.wellness-title {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.wellness-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.wellness-section {
+    margin-bottom: 50px;
+}
+
+.wellness-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Responsive grid */
+    gap: 30px;
+    justify-content: center;
+}
+
+.video-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-card h3 {
+    margin-bottom: 8px;
+    color: #1e90ff;
+    font-size: 1.25rem;
+}
+
+.video-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Content Grid for Tips */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.wellness-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f7;
+    transition: all 0.3s ease;
+}
+
+.wellness-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.wellness-card h2 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f0f4f8;
+    padding-bottom: 15px;
+}
+
+.wellness-card ul {
+    padding-left: 20px;
+    list-style-type: none;
+    /* Custom bullets */
+}
+
+.wellness-card li {
+    margin-bottom: 12px;
+    color: #555;
+    position: relative;
+    padding-left: 5px;
+    line-height: 1.6;
+}
+
+.wellness-card li::before {
+    content: "•";
+    color: #1e90ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Form Styling */
+.form-card {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-card h2 {
+    text-align: center;
+    border: none;
+    padding-bottom: 5px;
+}
+
+.form-card>p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.wellness-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.wellness-form input,
+.wellness-form select,
+.wellness-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fafbfc;
+    color: #333;
+    /* Ensure text is visible */
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    /* Important for padding */
+}
+
+/* Fix for select options visibility */
+.wellness-form select option {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.wellness-form input:focus,
+.wellness-form select:focus,
+.wellness-form textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    background-color: #fff;
+}
+
+.wellness-form button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.wellness-form button:hover {
+    background-color: #0b6fc2;
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wellness-container {
+        padding: 20px 15px;
+    }
+
+    .wellness-title {
+        font-size: 2rem;
+    }
+}
