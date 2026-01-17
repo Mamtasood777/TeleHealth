@@ -1,0 +1,71 @@
+.ambulance-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.ambulance-title {
+  text-align: center;
+  color: #527fe8;
+  font-size: 32px;
+}
+
+.ambulance-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #faf6f6;
+}
+
+.ambulance-card {
+  background: #FFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ambulance-form {
+  display: flex;
+  flex-direction: column;
+  color: #161515;
+}
+
+.ambulance-form label {
+  margin-top: 15px;
+  font-weight: 600;
+  
+}
+
+.ambulance-form input,
+.ambulance-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #080808;
+  background-color: #fefdfd;
+  color: #161515;
+}
+
+.ambulance-btn {
+  margin-top: 25px;
+  padding: 12px;
+  background-color:#527fe8;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ambulance-btn:hover {
+  background-color: #a91f1f;
+}
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}

@@ -1,0 +1,36 @@
+/* src/style/PrivacyPolicy.css */
+.pp-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.pp-logo-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 140px;
+  height: auto;
+}
+
+.pp-main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pp-head {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.pp-text {
+  font-size: 15px;
+  line-height: 1.7;
+}

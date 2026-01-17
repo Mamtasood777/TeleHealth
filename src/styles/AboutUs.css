@@ -1,0 +1,110 @@
+/* Container for About Us page */
+.about-page-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333; /* for any absolute elements inside */
+}
+
+/* Header: Title + Logo */
+.about-page-header {
+  display: flex;
+  justify-content: space-between; /* Heading left, logo right */
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+/* Logo next to heading */
+.about-page-logo-top {
+  max-width: 140px;
+  height: auto;
+}
+
+/* Main Heading */
+.about-page-header h1 {
+  color: #1e90ff;
+  font-size: 36px;
+  font-weight: bold;
+  
+}
+
+/* Sections */
+.about-page-section {
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  border-left: 4px solid #1e90ff;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.about-page-section:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Subheadings */
+.about-page-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Toggle Buttons */
+.about-page-toggle-btn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.about-page-toggle-btn:hover {
+  background-color: #0b6fc2;
+}
+
+/* Lists */
+.about-page-team-list,
+.about-page-services-list,
+.about-page-why-list {
+  margin-left: 20px;
+  list-style-type: disc;
+  margin-top: 10px;
+}
+
+/* Call to Action */
+.about-page-cta {
+  text-align: center;
+  background-color: #e6f0ff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-page-cta h2 {
+  color: #1e90ff;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+/* Responsive: logo moves below heading on small screens */
+@media (max-width: 600px) {
+  .about-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-page-logo-top {
+    margin-top: 10px;
+    max-width: 100px;
+  }
+}

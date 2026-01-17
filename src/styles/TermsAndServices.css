@@ -1,0 +1,41 @@
+.ts-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.ts-logo-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 140px;
+  height: auto;
+}
+
+.ts-main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ts-head {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.ts-text {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.ts-list {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
